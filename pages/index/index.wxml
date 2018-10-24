@@ -1,0 +1,5 @@
+<scroll-view scroll-y style="height: 95vh;" bindscrolltolower="lower" scroll-top='{{scrollTop}}' bindscroll="scroll" scroll-into-view="{{toView}}"
+ scroll-top="{{scrollTop}}" lower-threshold='50' scroll-with-animation='true'>
+	<view wx:for="{{list}}" wx:for-item="itemName" wx:key='list'>{{itemName}}</view>
+  <image id='icon_loading'  src="/images/icon-loading.gif"></image>
+</scroll-view>
